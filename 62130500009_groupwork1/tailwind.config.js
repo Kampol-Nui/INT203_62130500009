@@ -4,13 +4,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/images/1.jpg')",
-        'cook1': "url('/images/2.png')",
-        'cook2': "url('/images/3.png')",
-        'cook3': "url('/images/4.jpg')",
-        'cook4': "url('/images/5.png')",
-        'cook5': "url('/images/6.png')",
-        'arrow': "url('/images/arrow2.png')"
+        'hero-pattern': "url('../images/1.jpg')",
+        'cook1': "url('../images/2.png')",
+        'cook2': "url('../images/3.png')",
+        'cook3': "url('../images/4.jpg')",
+        'cook4': "url('../images/5.png')",
+        'cook5': "url('../images/6.png')",
+        'arrow': "url('../images/arrow2.png')"
       },
       backgroundSize: {
         'auto': 'auto',
