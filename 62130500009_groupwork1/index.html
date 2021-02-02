@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Vue Js - HelloWorld App</title>
+
+  <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+  <!-- Using via Google Web Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!-- https://tailwindcss.com/docs/installation -->
+  <!-- Using Tailwind via CDN 
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+  <link href="public/style.css" rel="stylesheet">
+  <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+  <!-- Vue CDN -->
+  <script src="https://unpkg.com/vue@next"></script>
+
+</head>
+<!---->
+
+<body>
+  <div id="app" class="">
+    <!--NO RESPONSIVE WITH DISPLAY SCALE 125% AND BROWSER ZOOM 80%-->
+
+    <nav class="bg-yellow-600 fixed w-full z-10">
+      <div class="flex justify-start">
+        <a class="text-white text-2xl font-bold pt-3 pl-72 pb-3 pr-4 cursor-pointer 2xl:pl-8 3xl:pl-72">DEVSISTERS</a>
+        <div class=" flex justify-start pt-3.5 pl-20 pb-0 pr-4 space-x-10 text-white text-lg font-medium ">
+          <!--CUSTOM HOVER ON TAILWIN TO DISPLAY OTHER ELEMENT WHEN HOVER-->
+          <div class="myDIV w-full h-10 ">
+            <ul class="  cursor-pointer hover:underline list-none ">OUR STORY
+              <div
+                class="hide hidden absolute text-black text-base pl-64 3xl:pl-xxxl leading-10 pt-1 mt-2   space-x-10  bg-white w-full left-0 border-yellow-600 border-b-2 ">
+                <li class="inline hover:text-yellow-600 ">MISSION / CORE VALUES</li>
+                <li class="inline hover:text-yellow-600 ">HISTORY</li>
+                <li class="inline hover:text-yellow-600">CI</li>
+                <li class="inline hover:text-yellow-600">AFFILATES</li>
+                <li class="inline hover:text-yellow-600">CONTACT</li>
+
+              </div>
+            </ul>
+          </div>
+          <!--CUSTOM HOVER ON TAILWIN TO DISPLAY OTHER ELEMENT WHEN HOVER-->
+          <div class="myDIV  h-10 ">
+          <ul class="  cursor-pointer hover:underline ">PRODUCTS
+            <div
+              class="hide hidden absolute text-black text-base pl-xxl 3xl:pl-4xl leading-10 pt-1 mt-2  space-x-10  bg-white w-full left-0 border-yellow-600 border-b-2 ">
+              <li class="inline hover:text-yellow-600 ">IP</li>
+              <li class="inline hover:text-yellow-600">GAMES</li>
+              <li class="inline hover:text-yellow-600">MOBILE SERVICES</li>
+
+            </div>
+          </ul>
+        </div>
+          <!--CUSTOM HOVER ON TAILWIN TO DISPLAY OTHER ELEMENT WHEN HOVER-->
+          <div class="myDIV  h-10 ">
+          <ul class="  cursor-pointer underline">SUPPORT
+            <div
+              class="hide hidden absolute text-black text-base pl-xxxl 3xl:pl-5xl leading-10 pt-1 mt-2  space-x-10   bg-white w-full left-0 border-yellow-600 border-b-2 ">
+              <li class="inline hover:text-yellow-600">FAQ & SUPPORT</li>
+
+
+            </div>
+          </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+    </nav><br><br><br>
+    <p class="text-black text-sm">DISPLAY CORRECTLY ON 
+      <br>1920 OR 1536 BROWSER PIXEL</p>
+
+    <!--<div class="w-screen h-20 border-b border-yellow-500 group-hover:opacity-100 opacity-0 "></div>-->
+    <div class="font-extrabold text-3xl text-yellow-600 ml-96 mb-20 mt-20 pl-28 3xl:ml-96 3xl:pl-32 2xl:ml-60">
+      HOW CAN WE HELP YOU TODAY?
+    </div>
+
+    <div
+      class="grid grid-cols-2 gap-x-10 gap-y-7 w-1/2 ml-96 pl-28 2xl:ml-60 3xl:ml-96 2xl:w-2/3 3xl:w-1/2 3xl:pl-32 3xl:gap-x-20 ">
+      <a href="#" class="group ">
+        <span
+          class="inline-block h-32 w-96  bg-hero-pattern bg-cover transition  ease-in-out  transform hover:bg-125% "></span>
+        <span class="inline-block text-2xl  2xl:text-2xl font-bold text-yellow-600 ">COOKIE RUN: OVENBREAK </span>
+        <span
+          class="inline-block relative  transition duration-300 ease-in-out transform group-hover:left-4 left-2 h-6 w-6 top-1 bg-arrow bg-cover "></span>
+      </a>
+      <a href="#" class="group">
+        <span class="inline-block h-32 w-96 bg-cook2 bg-cover group-hover:bg-125% "></span>
+        <span class="inline-block text-2xl 2xl:text-2xl font-bold text-yellow-600">COOKIE RUN: PUZZLE WORLD</span>
+        <span
+          class="inline-block relative  transition group-hover:left-4 duration-700 left-2 h-6 w-6 top-1 bg-arrow bg-cover "></span>
+      </a>
+      <a href="#" class="group">
+        <span class="inline-block h-32 w-96 bg-cook1 bg-cover group-hover:bg-125% "></span>
+        <span class="inline-block text-2xl font-bold text-yellow-600">COOKIE RUN: KINGDOM</span>
+        <span class="inline-block relative  group-hover:left-4 left-2 h-6 w-6 top-1 bg-arrow bg-cover "></span>
+      </a>
+      <a href="#" class="group">
+        <span class="inline-block h-32 w-96 bg-cook3 bg-cover group-hover:bg-125% "></span>
+        <span class="inline-block text-2xl font-bold text-yellow-600">PARTY PARTY DECOPLAY</span>
+        <span class="inline-block relative  group-hover:left-4 left-2 h-6 w-6 top-1 bg-arrow bg-cover "></span>
+      </a>
+      <a href="#" class="group">
+        <span class="inline-block h-32 w-96 bg-cook4 bg-cover group-hover:bg-125% "></span>
+        <span class="inline-block text-2xl font-bold text-yellow-600">SOLITAIRE: DECKED OUT</span>
+        <span class="inline-block relative  group-hover:left-4 left-2 h-6 w-6 top-1 bg-arrow bg-cover "></span>
+      </a>
+
+      <a href="#" class="group">
+        <span class="inline-block h-32 w-96 bg-cook5 bg-cover  group-hover:bg-125% "></span>
+        <span class="inline-block text-2xl font-bold text-yellow-600">DEVPLAY</span>
+        <span class="inline-block relative  group-hover:left-4 left-2 h-6 w-6 top-1 bg-arrow bg-cover "></span>
+      </a>
+      <!-- <div class="group">
+        <img src="images/1.jpg" alt="adas" class="w-full h-32 sm:h-48 scale-100 group-hover:scale-125">
+        <div>
+          <span class="inline-block text-2xl font-bold text-yellow-600">DEVPLAY</span>
+        <span class="inline-block relative  group-hover:left-4 left-2 h-6 w-6 top-1 bg-arrow bg-cover "></span>
+        </div>-->
+    </div>
+  </div>
+
+
+  <div class="bg-yellow-600 flex justify-center mt-44 pt-5 pb-16 ">
+    <div class="w-1/2 justify-center">
+      <div class="text-white text-lg font-bold mb-3">Devsisters Corp.</div>
+      <div class="text-white text-base font-semibold  mb-1.5">(06019) 327, Dosan-daero, Gangnam-gu, Seoul, Rep. of
+        Korea</div>
+      <div class="flex list-none space-x-3 text-white text-base font-semibold  mb-1">
+        <li><a href="#">USA</a></li>
+        <li><a href="#" ">TAIWAN</a></li>
+            <li><a href=" #">JAPAN</a></li>
+      </div>
+      <div class="text-white text-base font-semibold ">© 2021 Devsisters Corp. All Rights Reserved</div>
+    </div>
+    <div class="flex justify-center  text-white text-base font-semibold  space-x-14 mt-12 border-t p-1">
+      <div>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="dma9ksv pc">
+        <ul>
+          <li><a href="#"><strong>Privacy Policy</strong></a>
+          </li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+        <div><a href="#">KOR</a> / <a class="l6kqvyd" href="#">ENG</a></div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!-- <button class="duration-300 ease-in-out transform hover:scale-125 bg-emerald-600 text-black font-semibold py-3 px-6 rounded-md">
+    Hover medddddddddddddddddddd
+  </button>-->
+
+  <!-- my main.js -->
+  <script src="./main.js"></script>
+</body>
+
+</html>

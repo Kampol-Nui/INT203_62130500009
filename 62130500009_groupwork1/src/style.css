@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@variants hover {
+    .myDIV:hover  .hide {
+        display: block;
+        
+      }
+  }
